@@ -20,7 +20,7 @@ class App extends Component {
       .then(data => {
         const pokemon = new Pokemon(data);
 
-        // console.log(pokemon);
+        console.log(pokemon);
         this.setState({pokemon});
       })
       .catch(err => console.log(err));
