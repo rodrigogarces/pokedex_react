@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './styles/App.css'
-import PokeList from './PokeList'; //importa pokelist
+import PokeList from './PokeList'; //lista todos os pokémons
+import DetailView from './DetailView'; //visão detalhada de um pokémon
+import './styles/App.css';
 class App extends Component {
   constructor() { //incialização do estado do componente
     super();
@@ -10,6 +12,7 @@ class App extends Component {
     return (
       <div className = "App">
         <PokeList />
+        <DetailView />
       </div>
     );
   }
